@@ -1,8 +1,11 @@
-<div class="container">
-  <% if @word %>
-    <p>Show a list of anagrams for "<span id="word_is"><%= @word %></span>"</p>
-    <% @results.each do |word| %>
-      <p><%= word.word %></p>  
-    <% end %>
-  <% end %>
+<div class = "user_input">
+  <form action="/" method="get">
+    Want to find some anagrams (super quickly)?
+    <br>
+    <input type="text" name="user_input">
+    <input type="submit" value="Yea Buddy!">
+  </form>
+</div>
+<div class = results>
+  <p class="word"></p>
 </div>
