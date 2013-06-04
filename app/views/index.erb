@@ -1,0 +1,8 @@
+<div class="container">
+  <% if @word %>
+    <p>Show a list of anagrams for "<span id="word_is"><%= @word %></span>"</p>
+    <% @results.each do |word| %>
+      <p><%= word.word %></p>  
+    <% end %>
+  <% end %>
+</div>
